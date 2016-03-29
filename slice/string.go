@@ -3,7 +3,7 @@ package slice
 
 // Finds out whether an slice contains a given string
 func ContainsString(haystack *[]string, needle string) bool {
-	return indexOfString(haystack, needle) != -1
+	return IndexOfString(haystack, needle) != -1
 }
 
 // Finds out whether an slice contains a given string
