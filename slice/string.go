@@ -1,7 +1,7 @@
-// Provide utils to work with slices
+// Package slice provide functions to work with slices
 package slice
 
-// Finds out whether an slice contains a given string
+// ContainsString checks whether a slice contains a given string
 //
 //	# true
 //	slice.ContainsString("Foo", &string[]{"Foo", "Bar"})
@@ -11,7 +11,7 @@ func ContainsString(needle string, haystack *[]string) bool {
 	return IndexOfString(needle, haystack) != -1
 }
 
-// Finds out the first index of a given string within an slice
+// IndexOfString returns the first index of a given string
 //
 //	# 0
 //	slice.IndexOfString("Foo", &string[]{"Foo", "Bar"})
